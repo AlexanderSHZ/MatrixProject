@@ -139,7 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1DMatrixFunc.cpp" />
+    <ClCompile Include="2DMatrixFunc.cpp" />
     <ClCompile Include="MatrixMain.cpp" />
+    <ClCompile Include="PrintFunc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
