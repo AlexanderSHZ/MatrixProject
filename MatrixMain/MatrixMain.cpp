@@ -15,7 +15,7 @@ int main()
         cin >> ArrayElements1D.rows;
         cout << "Enter the number of columns \n";
         cin >> ArrayElements1D.column;
-        createArray1D(ArrayElements1D);
+       // createArray1D(ArrayElements1D);
     }
     else if (matrixDimension == 2)
     {
@@ -23,21 +23,31 @@ int main()
         cin >> ArrayElements2D.rows;
         cout << "Enter the number of columns \n";
         cin >> ArrayElements2D.column;
-        createArray2D(ArrayElements2D);
+       // createArray2D(ArrayElements2D);
     }
     else
     {
         cout << "Incorrect nuber of dimentions \n";
     }
 
+    if (matrixDimension == 1)
+    {
+        ArrayElements1D = createArray1D(ArrayElements1D);
+    }
+    else 
+    {
+        ArrayElements2D = createArray2D(ArrayElements2D);
+    }
+    
+
     cout << "Enter numbers to the matrix \n";
     if (matrixDimension == 1)
     {
-        fillArray1D(ArrayElements1D);
+        ArrayElements1D = fillArray1D(ArrayElements1D);
     }
     else
     {
-        fillArray2D(ArrayElements2D);
+        ArrayElements2D = fillArray2D(ArrayElements2D);
     }
 
     if (matrixDimension == 1)
