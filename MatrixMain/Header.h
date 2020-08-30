@@ -4,19 +4,28 @@
 #include <iomanip>
 using namespace std;
 
+#include <stdlib.h>
+#include <stdio.h>
 #pragma warning(disable : 4996)
 
-struct Array1D createArray1D(struct Array1D ArrayElements);
-struct Array2D createArray2D(struct Array2D ArrayElements);
+struct Array1D GetRowsColumn(struct Array1D ArrayElements);
+struct Array2D GetRowsColumn(struct Array2D ArrayElements);
 
-struct Array1D fillArray1D(struct Array1D ArrayElements);
-struct Array2D fillArray2D(struct Array2D ArrayElements);
+struct Array1D createArray(struct Array1D ArrayElements);
+struct Array2D createArray(struct Array2D ArrayElements);
 
-int freeMemory1D(struct Array1D ArrayElements);
-int freeMemory2D(struct Array2D ArrayElements);
+struct Array1D fillArray(struct Array1D ArrayElements);
+struct Array2D fillArray(struct Array2D ArrayElements);
 
-int print1D(struct Array1D ArrayElements);
-int print2D(struct Array2D ArrayElements);
+int freeMemory(struct Array1D ArrayElements);
+int freeMemory(struct Array2D ArrayElements);
+
+int print(struct Array1D ArrayElements);
+int print(struct Array2D ArrayElements);
+
+void Logotype();
+int MatrixType();
+int get_variant(int count);
 
 struct Array1D
 {

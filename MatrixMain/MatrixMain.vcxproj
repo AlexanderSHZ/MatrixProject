@@ -141,8 +141,12 @@
   <ItemGroup>
     <ClCompile Include="1DMatrixFunc.cpp" />
     <ClCompile Include="2DMatrixFunc.cpp" />
+    <ClCompile Include="CinCheck.cpp" />
+    <ClCompile Include="GetMatrixType.cpp" />
+    <ClCompile Include="GetRowsColumn.cpp" />
     <ClCompile Include="MatrixMain.cpp" />
     <ClCompile Include="PrintFunc.cpp" />
+    <ClCompile Include="ProgramLogo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />

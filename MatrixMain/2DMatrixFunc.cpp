@@ -1,6 +1,6 @@
 #include "Header.h"
 
-struct Array2D createArray2D(struct Array2D ArrayElements)
+struct Array2D createArray(struct Array2D ArrayElements)
 {
 
     ArrayElements.arrayPtr = (int**)malloc(sizeof(int*) * ArrayElements.rows);
@@ -16,8 +16,12 @@ struct Array2D createArray2D(struct Array2D ArrayElements)
     return ArrayElements;
 }
 
-struct Array2D fillArray2D(struct Array2D ArrayElements)
+struct Array2D fillArray(struct Array2D ArrayElements)
 {
+    Logotype();
+
+    cout << "Enter numbers to the matrix: \n";
+
     fflush(stdout);
 
     for (int i = 0; i < ArrayElements.rows; i++)
@@ -25,14 +29,15 @@ struct Array2D fillArray2D(struct Array2D ArrayElements)
         for (int j = 0; j < ArrayElements.column; j++)
 
         {
-            //ArrayElements.arrayPtr[i][j] = i * j;
+            cout << "Element [" << i << "][" << j << "] = ";
             cin >> ArrayElements.arrayPtr[i][j];
+            
         }
     }
     return ArrayElements;
 }
 
-int freeMemory2D(struct Array2D ArrayElements)
+int freeMemory(struct Array2D ArrayElements)
 {
     for (int i = 0; i < ArrayElements.rows; i++)
     {

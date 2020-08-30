@@ -1,7 +1,7 @@
 #include "Header.h"
 
 
-struct Array1D createArray1D(struct Array1D ArrayElements)
+struct Array1D createArray(struct Array1D ArrayElements)
 {
     ArrayElements.arrayPtr = (int*)malloc(sizeof(int) * ArrayElements.rows * ArrayElements.column);
     if (ArrayElements.arrayPtr == NULL)
@@ -11,8 +11,12 @@ struct Array1D createArray1D(struct Array1D ArrayElements)
     return ArrayElements;
 }
 
-struct Array1D fillArray1D(struct Array1D ArrayElements)
+struct Array1D fillArray(struct Array1D ArrayElements)
 {
+    Logotype();
+
+    cout << "Enter numbers to the matrix: \n";
+
     fflush(stdout);
 
     for (int i = 0; i < ArrayElements.rows; i++)
@@ -20,14 +24,15 @@ struct Array1D fillArray1D(struct Array1D ArrayElements)
         for (int j = 0; j < ArrayElements.column; j++)
 
         {
-            //ArrayElements.arrayPtr[i * ArrayElements.column + j] = i * j;
+            cout << "Element [" << i << "][" << j << "] = ";
             cin >> ArrayElements.arrayPtr[i * ArrayElements.column + j];
+            
         }
     }
     return ArrayElements;
 }
 
-int freeMemory1D(struct Array1D ArrayElements)
+int freeMemory(struct Array1D ArrayElements)
 {
     free(ArrayElements.arrayPtr);
 

@@ -1,7 +1,9 @@
 #include "Header.h"
 
-int print1D(struct Array1D ArrayElements)
+int print(struct Array1D ArrayElements)
 {
+    Logotype();
+
     for (int i = 0; i < ArrayElements.rows; i++)
     {
         cout << "row[" << setw(3) << i << "]";
@@ -15,8 +17,10 @@ int print1D(struct Array1D ArrayElements)
     return 0;
 }
 
-int print2D(struct Array2D ArrayElements)
+int print(struct Array2D ArrayElements)
 {
+    Logotype();
+
     for (int i = 0; i < ArrayElements.rows; i++)
     {
         cout << "row[" << setw(3) << i << "]";
