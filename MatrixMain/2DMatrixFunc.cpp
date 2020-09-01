@@ -29,9 +29,9 @@ struct Array2D fillArray(struct Array2D ArrayElements)
         for (int j = 0; j < ArrayElements.column; j++)
 
         {
-            cout << "Element [" << i << "][" << j << "] = ";
-            cin >> ArrayElements.arrayPtr[i][j];
-            
+            //cout << "Element [" << i << "][" << j << "] = ";
+            //cin >> ArrayElements.arrayPtr[i][j];
+            ArrayElements.arrayPtr[i][j] = (i +2) * (j + 1);
         }
     }
     return ArrayElements;

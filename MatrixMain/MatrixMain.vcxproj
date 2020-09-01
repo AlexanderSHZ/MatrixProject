@@ -147,6 +147,7 @@
     <ClCompile Include="MatrixMain.cpp" />
     <ClCompile Include="PrintFunc.cpp" />
     <ClCompile Include="ProgramLogo.cpp" />
+    <ClCompile Include="SortMatrix.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />

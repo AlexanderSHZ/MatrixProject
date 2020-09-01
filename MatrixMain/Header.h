@@ -23,8 +23,14 @@ int freeMemory(struct Array2D ArrayElements);
 int print(struct Array1D ArrayElements);
 int print(struct Array2D ArrayElements);
 
+struct Array1D sortArrayMainDiag(struct Array1D ArrayElements);
+struct Array2D sortArrayMainDiag(struct Array2D ArrayElements);
+
+struct Array1D sortArraySideDiag(struct Array1D ArrayElements);
+struct Array2D sortArraySideDiag(struct Array2D ArrayElements);
+
 void Logotype();
-int MatrixType();
+int MatrixType();  
 int get_variant(int count);
 
 struct Array1D

@@ -11,7 +11,7 @@ int print(struct Array1D ArrayElements)
         cout << setw(3) << "[" << setw(2) << i << "]";
     }
     printf("\n");
-
+    printf("\n");
     
     for (int i = 0; i < ArrayElements.rows; i++)
     {
@@ -37,6 +37,7 @@ int print(struct Array2D ArrayElements)
     {
         cout << setw(3) << "[" << setw(2) << i << "]";
     }
+    printf("\n");
     printf("\n");
 
     for (int i = 0; i < ArrayElements.rows; i++)
