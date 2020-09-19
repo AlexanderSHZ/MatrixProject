@@ -1,19 +1,9 @@
 ﻿#include "Header.h"
 
-
-struct LinkedList 
-{
-    int age;
-    char* Name;
-
-    
-    LinkedList* ll;
-};
-
-
 int main()
 {
     int matrixDimension = 0;
+    int diagType = 0;
 
     Array1D ArrayElements1D;
     Array2D ArrayElements2D;
@@ -28,8 +18,20 @@ int main()
         ArrayElements1D = createArray(ArrayElements1D);
         ArrayElements1D = fillArray(ArrayElements1D);
         print(ArrayElements1D);
-        cin >> i;
-        ArrayElements1D = sortArrayMainDiag(ArrayElements1D);
+        //diagType = SortArray();
+        cout << "What diagonal do you whant to sort?" << "\n";
+        cout << " 1 - main diagonal; " << "\n";
+        cout << " 2 - side diagonal; " << "\n";
+        cin >> diagType;
+        if (diagType == 1)
+        {
+            ArrayElements1D = sortArrayMainDiag(ArrayElements1D);
+        }
+        else
+        {
+            ArrayElements1D = sortArraySideDiag(ArrayElements1D);
+        }
+        
         print(ArrayElements1D);
     }
     else 
@@ -38,8 +40,12 @@ int main()
         ArrayElements2D = createArray(ArrayElements2D);
         ArrayElements2D = fillArray(ArrayElements2D);
         print(ArrayElements2D);
-        cin >> i;
-        if (i == 1)
+        //diagType = SortArray();
+        cout << "\n What diagonal do you whant to sort?" << "\n";
+        cout << " 1 - main diagonal; " << "\n";
+        cout << " 2 - side diagonal; " << "\n";
+        cin >> diagType;
+        if (diagType == 1)
         {
             ArrayElements2D = sortArrayMainDiag(ArrayElements2D);
         }

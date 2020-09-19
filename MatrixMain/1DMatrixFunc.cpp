@@ -26,7 +26,7 @@ struct Array1D fillArray(struct Array1D ArrayElements)
         {
             //cout << "Element [" << i << "][" << j << "] = ";
             //cin >> ArrayElements.arrayPtr[i * ArrayElements.column + j];
-            ArrayElements.arrayPtr[i * ArrayElements.column + j] = i + j;
+            ArrayElements.arrayPtr[i * ArrayElements.column + j] = (5 + i) * (j +7);
         }
     }
     return ArrayElements;

@@ -29,9 +29,11 @@ struct Array2D sortArrayMainDiag(struct Array2D ArrayElements);
 struct Array1D sortArraySideDiag(struct Array1D ArrayElements);
 struct Array2D sortArraySideDiag(struct Array2D ArrayElements);
 
+
 void Logotype();
 int MatrixType();  
 int get_variant(int count);
+int SortArray();
 
 struct Array1D
 {
