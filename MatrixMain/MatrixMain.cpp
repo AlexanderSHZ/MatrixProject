@@ -18,11 +18,8 @@ int main()
         ArrayElements1D = createArray(ArrayElements1D);
         ArrayElements1D = fillArray(ArrayElements1D);
         print(ArrayElements1D);
-        //diagType = SortArray();
-        cout << "What diagonal do you whant to sort?" << "\n";
-        cout << " 1 - main diagonal; " << "\n";
-        cout << " 2 - side diagonal; " << "\n";
-        cin >> diagType;
+        diagType = SortArray(diagType);
+        
         if (diagType == 1)
         {
             ArrayElements1D = sortArrayMainDiag(ArrayElements1D);
@@ -40,11 +37,8 @@ int main()
         ArrayElements2D = createArray(ArrayElements2D);
         ArrayElements2D = fillArray(ArrayElements2D);
         print(ArrayElements2D);
-        //diagType = SortArray();
-        cout << "\n What diagonal do you whant to sort?" << "\n";
-        cout << " 1 - main diagonal; " << "\n";
-        cout << " 2 - side diagonal; " << "\n";
-        cin >> diagType;
+        diagType = SortArray(diagType);
+        
         if (diagType == 1)
         {
             ArrayElements2D = sortArrayMainDiag(ArrayElements2D);

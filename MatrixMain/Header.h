@@ -33,7 +33,7 @@ struct Array2D sortArraySideDiag(struct Array2D ArrayElements);
 void Logotype();
 int MatrixType();  
 int get_variant(int count);
-int SortArray();
+int SortArray(int c);
 
 struct Array1D
 {

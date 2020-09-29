@@ -1,15 +1,13 @@
 #include "Header.h"
 
-int SortArray()
+int SortArray(int c)
 {
-	int diagType = 0;
-
 	cout << "What diagonal do you whant to sort?" << "\n";
 	cout << " 1 - main diagonal; " << "\n";
 	cout << " 2 - side diagonal; " << "\n";
-	cin >> diagType;
+	cin >> c;
 
-	return diagType;
+	return c;
 }
 
 struct Array1D sortArrayMainDiag(struct Array1D ArrayElements)
