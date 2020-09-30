@@ -12,6 +12,8 @@ int MatrixType()
     cout << (char)9;
     cout << (char)186 << " 2 - two dimentional matrix; " << setw(12) << (char)186 << "\n";
     cout << (char)9;
+    cout << (char)186 << " 0 - exit " << setw(31) << (char)186 << "\n";
+    cout << (char)9;
     cout << (char)200;
     for (size_t i = 0; i < 40; i++)
     {
@@ -22,7 +24,7 @@ int MatrixType()
     cout << (char)9;
     cout << " Matrix dimension = ";
 
-    matrixDimension = get_variant(2);
+    matrixDimension = get_variant(3);
 
     return matrixDimension;
 }

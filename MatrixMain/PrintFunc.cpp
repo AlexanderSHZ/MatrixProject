@@ -2,9 +2,8 @@
 
 int print(struct Array1D ArrayElements)
 {
-    Logotype();
-
-    cout << (char)9 << (char)9;
+    cout << "\n";
+    cout << (char)9 << (char)9 << (char)32;
     
     for (int i = 0; i < ArrayElements.column; i++)
     {
@@ -24,14 +23,14 @@ int print(struct Array1D ArrayElements)
         }
         printf("\n");
     }
+    
     return 0;
 }
 
 int print(struct Array2D ArrayElements)
-{
-    Logotype();
-
-    cout << (char)9 << (char)9;
+{  
+    cout << "\n";
+    cout << (char)9 << (char)9 << (char)32;
 
     for (int i = 0; i < ArrayElements.column; i++)
     {
@@ -51,5 +50,6 @@ int print(struct Array2D ArrayElements)
         }
         printf("\n");
     }
+
     return 0;
 }

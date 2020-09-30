@@ -17,8 +17,11 @@ int main()
         ArrayElements1D = GetRowsColumn(ArrayElements1D);
         ArrayElements1D = createArray(ArrayElements1D);
         ArrayElements1D = fillArray(ArrayElements1D);
+        sortArrayDiagType();
         print(ArrayElements1D);
-        diagType = SortArray(diagType);
+        diagTypeVariant();
+        diagType = get_variant(3);
+            
         
         if (diagType == 1)
         {
@@ -36,8 +39,10 @@ int main()
         ArrayElements2D = GetRowsColumn(ArrayElements2D);
         ArrayElements2D = createArray(ArrayElements2D);
         ArrayElements2D = fillArray(ArrayElements2D);
+        sortArrayDiagType();
         print(ArrayElements2D);
-        diagType = SortArray(diagType);
+        diagTypeVariant();
+        diagType = get_variant(3);
         
         if (diagType == 1)
         {

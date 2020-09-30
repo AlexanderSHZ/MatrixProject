@@ -15,7 +15,16 @@ struct Array1D fillArray(struct Array1D ArrayElements)
 {
     Logotype();
 
-    cout << "Enter numbers to the matrix: \n";
+    cout << (char)9;
+    cout << (char)186 << "Enter numbers to the matrix:" << setw(13) << (char)186 << "\n";    
+    cout << (char)9;
+    cout << (char)200;
+    for (size_t i = 0; i < 40; i++)
+    {
+        cout << (char)205;
+    }
+    cout << (char)188 << "\n";
+    cout << "\n";
 
     fflush(stdout);
 
@@ -24,9 +33,10 @@ struct Array1D fillArray(struct Array1D ArrayElements)
         for (int j = 0; j < ArrayElements.column; j++)
 
         {
-            //cout << "Element [" << i << "][" << j << "] = ";
-            //cin >> ArrayElements.arrayPtr[i * ArrayElements.column + j];
-            ArrayElements.arrayPtr[i * ArrayElements.column + j] = (5 + i) * (j +7);
+            cout << (char)9;
+            cout << "Element [" << i << "][" << j << "] = ";
+            cin >> ArrayElements.arrayPtr[i * ArrayElements.column + j];
+            //ArrayElements.arrayPtr[i * ArrayElements.column + j] = (5 + i) * (j + 7);
         }
     }
     return ArrayElements;
