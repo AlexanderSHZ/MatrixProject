@@ -12,6 +12,10 @@ int get_variant(int count)
         scanf("%s", s); // считываем строку повторно
     }
 
+    if(variant == 0)
+    {
+        _Exit(EXIT_SUCCESS);
+    }
 
     return variant;
 }
